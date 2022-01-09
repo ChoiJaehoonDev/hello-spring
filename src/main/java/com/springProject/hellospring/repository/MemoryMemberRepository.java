@@ -34,5 +34,9 @@ public class MemoryMemberRepository implements MemberRepository{
         return new ArrayList<>(store.values());
     }
 
+    public void clearStore(){
+        store.clear();
+    }
+
     //동작테스트는 테스트 케이스 작성
 }
